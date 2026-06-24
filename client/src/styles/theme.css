@@ -1,0 +1,25 @@
+:root {
+  --ink: #1a1008;
+  --ink2: #3d2b1a;
+
+  --gold: #d4af37;
+  --gold-light: #e8c97a;
+  --gold-dim: #9a6e1e;
+
+  --parchment: #faf5eb;
+  --parchment-2: #f3ead8;
+  --parchment-3: #e8dcc4;
+
+  --rose: #8b2e42;
+  --rose-light: #c45a72;
+
+  --teal: #1e5f6e;
+  --teal-light: #3a8fa3;
+
+  --cream: #fffdf7;
+
+  --text-muted: #6b5440;
+
+  --shadow-soft: 0 8px 32px rgba(26,16,8,0.08);
+  --shadow-elegant: 0 15px 40px rgba(0,0,0,0.12);
+}

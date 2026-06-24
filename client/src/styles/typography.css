@@ -1,0 +1,11 @@
+
+:root {
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  --font-verse: 'Crimson Pro', serif;
+  --font-hand: 'Caveat', cursive;
+}
+
+body {
+  font-family: var(--font-body);
+}

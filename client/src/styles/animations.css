@@ -1,0 +1,110 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+/* Elegant Section Divider */
+
+.section-transition {
+  position: relative;
+}
+
+.section-transition::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: rgba(212, 175, 55, 0.25);
+  margin: 60px auto 0;
+}
+
+/* Soft Glow Animation */
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+.glow-pulse {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* Floating Effect */
+
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+/* Gold Shimmer */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-gold {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.5),
+    rgba(255, 228, 130, 1),
+    rgba(212, 175, 55, 0.5)
+  );
+
+  background-size: 200% auto;
+
+  animation: shimmer 4s linear infinite;
+}
+
+/* Smooth Button Hover */
+
+.hover-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.12);
+}

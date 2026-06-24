@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@import "./styles/theme.css";
+@import "./styles/typography.css";
+@import "./styles/animations.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  overflow-x: hidden;
+}
